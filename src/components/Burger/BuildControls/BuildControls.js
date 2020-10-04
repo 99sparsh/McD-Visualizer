@@ -12,7 +12,13 @@ const controls = [
 ];
 
 const buildControls = (props) => {
-    return <div className={styles.BuildControls}></div>;
+    return (
+        <div className={styles.BuildControls}>
+            {controls.map((ctrl) => (
+                <BuildControl key={ctrl.label} label={ctrl.label} />
+            ))}
+        </div>
+    );
 };
 
 export default buildControls;
