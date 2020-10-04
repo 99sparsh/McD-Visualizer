@@ -1,9 +1,17 @@
 .BuildControls {
-    width: 100%;
+    width: 500px;
+    height: 400px;
     background-color: #cf8f2e;
     display: flex;
     flex-flow: column;
     box-shadow: 0 2px 1px #ccc;
     margin: auto;
     padding: 10px 0;
+}
+
+@media (max-width: 420px) {
+    .BuildControls {
+        width: 200px;
+        height: 200px;
+    }
 }
