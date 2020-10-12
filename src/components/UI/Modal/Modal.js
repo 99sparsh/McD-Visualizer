@@ -23,4 +23,6 @@ const modal = (props) => {
     );
 };
 
-export default modal;
+export default React.memo(modal, (prevProps, nextProps) => {
+    return prevProps.show === nextProps.show;
+});
